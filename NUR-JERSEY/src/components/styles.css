@@ -1,0 +1,527 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 14px;
+    font-family: sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #2f6ce6;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+ 
+    
+  
+   
+}
+
+.header nav ul {
+    list-style: none;
+    padding: 10px;
+    
+    
+    
+}
+
+.header nav ul li {
+    display: inline;
+    margin: 0 20px;
+    justify-content: space-between;
+    
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.jersey h2{
+    padding-top: 50px;
+    padding-bottom: 20px ;
+    /* font-size: larger; */
+}
+
+.about, .services, .jersey {
+    /* padding: 20px; */
+    text-align: center;
+}
+
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+.cta{
+    display: inline-block;
+    padding: 10px 30px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #2f6ce6;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 80px;
+    transition: .3s ease;
+
+}
+
+ .cta:hover {
+    color: white;
+    background-color: #2f6ce6;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*  */
+
+/* hero section*/
+#hero{
+
+    background-image: url(./images/b5.png);
+    background-size:cover;
+    position: relative;
+    z-index: 1;
+    
+}
+
+#hero::after {
+content: '';
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+background-color: black;
+opacity: .6;
+z-index: -1;
+}
+
+#hero .hero{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+ }
+ 
+#hero h1{
+    display: block;
+    width: fit-content;
+    font-size: 2.6rem;
+    color: transparent;
+    position: relative;
+    animation: text_reveal .5s ease forwards; 
+    animation-delay: 1s;
+} 
+
+#hero h1:nth-child(1){
+    animation: text_reveal 5s ease forwards;
+    animation-delay: 1s;
+}
+
+#hero h1:nth-child(2){
+    animation: text_reveal 5s ease forwards;
+    animation-delay: 2s;
+}
+
+#hero h1:nth-child(3){
+    animation: text_reveal_name 5s ease forwards;
+    animation-delay: 3s;
+}
+
+#hero h1:nth-child(1) span{
+    animation-delay: .5s;
+}
+
+#hero h1:nth-child(2) span{
+    animation-delay: 1.5s;
+}
+
+#hero h1:nth-child(3) span{
+    animation-delay: 2.5s;
+}
+
+.jersey h2{
+    margin-top: 100px;
+}
+
+.jersey-types{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.jersey-item {
+   
+    padding: 10px;
+    margin: 10px;
+    width: 25%;
+}
+
+.jersey-item h3{
+    margin: 10px;
+}
+
+.jersey-item img{
+    border-radius: 5px;
+}
+
+.about{
+margin-top: 150px;
+margin-bottom: 30px;
+   
+}
+.about h2{
+    margin-bottom: 25px;
+}
+
+.about h2, .contact h2, .jersey h2{
+    margin-bottom: 50px;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+/* contact section */
+
+.section-title{
+    font-size: 2rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+.section-title{
+    margin-bottom: 60px;
+}
+
+ .section-title span, .contact span, .about span, .jersey span{
+    color: #2f6ce6;
+   
+}
+
+
+#services .services{
+    flex-direction: column;
+  
+}
+#services .contact-items{
+   
+    display:flex ;
+    flex-direction: row;
+}
+
+#services .contact-item{
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 18px 0 #00002c;
+    transition: .3s ease box-shadow;
+}
+
+#services .contact-item:hover{
+    box-shadow: 0px 0px 5px 0 #00002c;
+}
+
+#services .contact-info h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+#services .contact-info h2{
+    font-size: .9rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+
+.contact{
+   margin-left: 500px; 
+   margin-bottom: 100px;
+   
+    
+}
+
+.con{
+    margin-top: 50px;
+    margin-left: -30px;
+}
+.contact .con input, textarea, button{
+    display:flex;
+    margin-bottom: 40px;
+    
+    
+}
+
+.contact .con input, textarea{
+  
+    width: 200px;
+    height: 30px;
+}
+
+.contact .con button{
+    margin-left: 157px;
+    padding: 5px;
+    width: 120px;
+    height: 25px;
+    font-size: 16px;
+    border: 1px solid #2f6ce6;
+    border-radius: 2px;
+
+}
+.contact .con button:hover{
+    font-size: 14px;
+    color: white;
+    background-color: #2f6ce6;
+}
+.footer {
+    font-size: 15px;
+    background-color: #2f6ce6;
+    color: white;
+    text-align: center;
+    padding: 10px;
+   
+}
+
+
+/* kkeyframe    */
+@keyframes text_reveal_box{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes text_reveal{
+    100%{
+color: white;
+    }
+}
+
+@keyframes text_reveal_name{
+    100%{
+color: #2f6ce6;
+
+
+    }
+}
+
+@media(max-width:1024px){
+
+#services .services{
+    margin-top: -400px;
+   
+}
+   
+.contact{
+    margin-left: 400px; 
+    margin-top: -400px;
+      
+ }
+
+ .con{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+ .contact .con input, textarea{
+    width: 200px;
+    height: 30px;
+    
+}
+
+}
+
+/*  855 */
+@media(max-width:855px){
+
+      
+.contact{
+    margin-left: 300px; 
+    margin-top: -300px;
+      
+ }
+}
+
+/* 770 */
+@media(max-width:770px){
+    #services .services{
+        margin-top: -200px;
+       
+    }
+       
+}
+/*  550 */
+
+@media(max-width:550px){
+    h2 {  
+        font-size: 1.2em;   
+    }
+
+    .jersey h2{
+        margin-bottom: 30px;
+        margin-top: 50px;
+    }
+
+    .jersey-item {
+    display: flex;
+    margin: 30px;
+    }
+    .j{
+       margin-top: 70px;
+       margin-left: 10px;
+    }
+    .jersey-item h3 {
+        width: 150px;
+        margin: 20px;
+        
+    }
+    .jersey-item p{
+        width: 250px;
+        margin-left: -10px;
+    }
+    .jersey-types {
+        padding-left: 20px;
+        display: block;
+    }
+    .section-title {
+        margin-top: 60px;
+    }
+    #services .services{
+        margin-top: 50px;
+    }
+    #services .contact-items {
+        display: block;
+        margin-left: 70px;
+        flex-direction: row;
+    }
+    .contact{
+        margin-top: 50px;
+        margin-left: 170px;
+    }
+    .about p{
+        width: 90%;
+        padding-left: 20px;
+    }
+
+}
+
+@media(max-width:430px){
+
+    #hero h1 {
+       
+        font-size: 2rem;
+    
+    }
+
+    .jersey-types {
+        padding-left: 0;
+    }
+    .jersey-item {
+        margin: 0px;
+    }
+    .j {
+        margin-left: 0;
+    }
+    .jersey-item p {
+        width: 180px;
+        margin-left: 15px;
+    }
+    .contact {
+       
+        margin-left: 90px;
+    }
+}
+
+@media(max-width:390px){
+    .header nav ul {
+        padding: 0;
+    }
+    .header nav ul li a {
+        font-size: 10px;
+    }
+    .jersey-item p {
+        width: 160px;
+        margin-left: 5px;
+    }
+    .contact .con button {
+        margin-left: 120px;
+        
+    }
+}
+
+@media(max-width:390px){
+    h2 {  
+        font-size: 1.2em;   
+    }
+    .jersey-item p {
+        width: 120px;
+        margin-left: 5px;
+    }
+    .jersey-item h3 {
+        margin: 0;
+    }
+    .jersey p{
+        font-size: 14px;
+        width: 320px;
+        margin: 10px;
+    }
+    .jersey .jersey-types p{
+        width: 120px;
+        font-size: 12px;
+        margin-top: 15px;
+    }
+   
+    .contact .con button {
+        margin-left: 110px;
+        
+    }
+}
+@media(max-width:390px){
+    #hero h1 {
+       
+        font-size: 1.7rem;
+    
+    }
+    
+}
+
+
+
+
+
+
+
